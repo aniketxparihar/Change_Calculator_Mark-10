@@ -1,3 +1,4 @@
+//grabbing the links
 var inputs = document.querySelectorAll("input");
 var buttons = document.querySelectorAll("button");
 var payment = document.querySelector("#payment");
@@ -9,7 +10,9 @@ var nochange = document.querySelector("#nooutput");
 var results = document.querySelectorAll(".value");
 var changeText=document.querySelector('h5');
 var denominations = [1, 5, 10, 20, 100, 500, 2000];
+//end
 
+//addEventListener Amount
 buttons[0].addEventListener("click", () => {
   if (Number(inputs[0].value) > 0) {
     payment.style.display = "flex";
@@ -20,6 +23,8 @@ buttons[0].addEventListener("click", () => {
     error1.style.display = "block";
   }
 });
+//end
+
 
 buttons[1].addEventListener("click", () => {
   var bill = inputs[0].value;
